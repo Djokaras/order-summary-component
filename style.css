@@ -1,0 +1,183 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* General */
+
+html {
+	font-size: 62.5%;
+	background: hsl(225, 100%, 94%);
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	padding: 10rem 15rem;
+	background-image: url(images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+}
+
+/*///////////
+/* Layout */
+/*////////*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+	max-width: 45rem;
+	box-shadow: 0 0 3px rgb(0 0 0 / 0.2);
+	background: #fff;
+	border-radius: 16px;
+	overflow: hidden;
+	margin: 0 auto 2rem;
+}
+
+.main {
+	padding: 2rem 5rem;
+}
+
+.plan-section {
+	background: hsl(225, 100%, 98%);
+	padding: 2rem 3rem;
+	border-radius: 16px;
+
+	display: flex;
+	gap: 2.4rem;
+	align-items: center;
+}
+
+.plan-change {
+	margin-left: auto;
+}
+
+.attribution {
+	text-align: center;
+}
+
+/*///////////
+/* Styling */
+/*////////*/
+
+.heading-primary {
+	font-size: 2.8rem;
+	font-weight: 900;
+	color: rgb(56, 56, 56);
+	text-align: center;
+	margin-bottom: 2.6rem;
+}
+
+.plan-section {
+	margin-top: 2.6rem;
+	margin-bottom: 2.6rem;
+}
+
+.plan-heading {
+	font-size: 1.6rem;
+	font-weight: 900;
+	color: rgb(56, 56, 56);
+}
+
+.plan-price {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+}
+
+.plan-change {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: hsl(245, 75%, 52%);
+	border-bottom: 1px solid hsl(245, 75%, 52%);
+}
+
+.main-text {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.4;
+	color: hsl(224, 23%, 55%);
+	text-align: center;
+}
+
+.payment-btn,
+.cancel-btn {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	border-radius: 8px;
+	text-align: center;
+	padding: 1.5rem 3rem;
+}
+
+.payment-btn {
+	color: #fff;
+	background: hsl(245, 75%, 52%);
+	margin-bottom: 2rem;
+}
+
+.cancel-btn {
+	color: hsl(224, 23%, 55%);
+}
+
+@media (max-width: 43em) {
+	html {
+		font-size: 52.25%;
+	}
+
+	body {
+		padding: 10rem 3rem;
+		background-image: url(images/pattern-background-mobile.svg);
+		background-repeat: no-repeat;
+	}
+
+	.heading {
+	}
+
+	.main {
+		padding: 3rem 3rem;
+	}
+
+	.main-text {
+		font-size: 1.8rem;
+	}
+} ;
